@@ -151,6 +151,7 @@ static TokenType checkKeyword(int start, int length,
 
 static TokenType identifierType()
 {
+    // Checks for key words using an explicit trie filtering
     switch (scanner.start[0])
     {
     case 'a':

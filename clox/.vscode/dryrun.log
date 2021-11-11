@@ -1,0 +1,5 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/add2rng/git/lox/clox'
+make: Nothing to be done for 'default'.
+make: Leaving directory '/home/add2rng/git/lox/clox'
+ 
