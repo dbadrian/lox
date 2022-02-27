@@ -1,5 +1,16 @@
-make --dry-run --keep-going --print-directory
+make --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/home/add2rng/git/lox/clox'
-make: Nothing to be done for 'default'.
+gcc -g -Wall   -c -o clox.o clox.c
+gcc -g -Wall   -c -o table.o table.c
+gcc -g -Wall   -c -o compiler.o compiler.c
+gcc -g -Wall   -c -o chunk.o chunk.c
+gcc -g -Wall   -c -o debug.o debug.c
+gcc -g -Wall   -c -o memory.o memory.c
+gcc -g -Wall   -c -o value.o value.c
+gcc -g -Wall   -c -o vm.o vm.c
+gcc -g -Wall   -c -o scanner.o scanner.c
+gcc -g -Wall   -c -o object.o object.c
+gcc -g -Wall   -c -o linenoise.o linenoise.c
+gcc -g -Wall -o clox clox.o table.o compiler.o chunk.o debug.o memory.o value.o vm.o scanner.o object.o linenoise.o
 make: Leaving directory '/home/add2rng/git/lox/clox'
  

@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'clox.o', needed by 'clox'.  Stop.
+ 
 # GNU Make 4.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2014 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Nov  9 21:14:31 2021
+# Make data base, printed on Sun Feb 27 10:06:12 2022
 
 # Variables
 
@@ -67,7 +69,7 @@ DISPLAY = :0
 # environment
 DCONF_PROFILE = osd_proxy
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/10000730/vscode-ipc-1a847d6a-d88c-4e45-839a-a46e4ed6893d.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/10000730/vscode-ipc-8571761c-3f7d-4c48-9b53-5c135e24f762.sock
 # environment
 VSCODE_CWD = /home/add2rng
 # environment
@@ -75,7 +77,7 @@ XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session0
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /home/add2rng/.local/bin:/home/add2rng/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/add2rng/.cargo/bin/
+NO_PROXY = localhost,127.0.0.1,127.*,::1,172.16.*,172.17.*,172.18.*,172.19.*,172.20.*,172.21.*,172.22.*,172.23.*,172.24.*,172.25.*,172.26.*,172.27.*,172.28.*,172.29.*,172.30.*,172.31.*,192.168.*,10.*,de.bosch.com,apac.bosch.com,emea.bosch.com,us.bosch.com,rb-artifactory.bosch.com,sourcecode01.de.bosch.com,sourcecode.socialcoding.bosch.com
 # environment
 CDC_PREW2KHOST = rngx7982
 # environment
@@ -95,15 +97,15 @@ XDG_GREETER_DATA_DIR = /var/lib/lightdm-data/add2rng
 # environment
 XDG_SESSION_DESKTOP = xsession
 # environment
-SSH_AUTH_SOCK = /tmp/ssh-8Z8rFXuDlFWF/agent.8192
+SSH_AUTH_SOCK = /tmp/ssh-GJjvf888gVKq/agent.7609
 # automatic
 %F = $(notdir $%)
 # environment
 HTTPS_PROXY = http://127.0.0.1:3128/
 # environment
-no_proxy = localhost,127.0.0.1,127.*,172.*,192.168.*,10.*,de.bosch.com,apac.bosch.com,emea.bosch.com,us.bosch.com,rb-artifactory.bosch.com,sourcecode01.de.bosch.com,sourcecode.socialcoding.bosch.com
+no_proxy = localhost,127.0.0.1,127.*,::1,172.16.*,172.17.*,172.18.*,172.19.*,172.20.*,172.21.*,172.22.*,172.23.*,172.24.*,172.25.*,172.26.*,172.27.*,172.28.*,172.29.*,172.30.*,172.31.*,192.168.*,10.*,de.bosch.com,apac.bosch.com,emea.bosch.com,us.bosch.com,rb-artifactory.bosch.com,sourcecode01.de.bosch.com,sourcecode.socialcoding.bosch.com
 # environment
-DA_SESSION_ID_AUTH = 048bd9ac-f964-294a-8787-1b4a0a259344
+DA_SESSION_ID_AUTH = 7b00c886-fdaa-7e46-9e92-4ae87cc3bd6b
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
@@ -113,7 +115,7 @@ PWD = /home/add2rng/git/lox/clox
 # environment
 XDG_SEAT = seat0
 # environment
-SSH_AGENT_PID = 8364
+SSH_AGENT_PID = 7744
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # environment
@@ -125,7 +127,7 @@ HOME = /home/add2rng
 # environment
 VSCODE_CLI = 1
 # environment
-VSCODE_CODE_CACHE_PATH = /home/add2rng/.config/Code/CachedData/6cba118ac49a1b88332f312a8f67186f7f3c1643
+VSCODE_CODE_CACHE_PATH = /home/add2rng/.config/Code/CachedData/f80445acd5a3dadef24aa209168452a3d97cc326
 # environment
 LOGNAME = add2rng
 # environment
@@ -145,6 +147,8 @@ MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
 # environment
+PATH = /home/add2rng/.local/bin:/home/add2rng/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/add2rng/.cargo/bin/
+# environment
 SHLVL = 1
 # makefile (from 'Makefile', line 1)
 CC = gcc
@@ -159,11 +163,11 @@ LIBVIRT_DEFAULT_URI = qemu:///system
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
-CDC_JOINED_SITE = RASVPN-EMEA
+CDC_JOINED_SITE = DOMAIN-EMEA
 # default
 MAKE_COMMAND := make
 # environment
-CDC_JOINED_DC = fe-bcd116.de.bosch.com
+CDC_JOINED_DC = si-bcd113.de.bosch.com
 # default
 .VARIABLES := 
 # automatic
@@ -173,7 +177,7 @@ LANGUAGE = en_US:en
 # environment
 XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
 # environment
-VSCODE_IPC_HOOK = /run/user/10000730/vscode-c51ee4b4-1.61.2-main.sock
+VSCODE_IPC_HOOK = /run/user/10000730/vscode-c51ee4b4-1.64.2-main.sock
 # makefile
 MAKEFLAGS = pqrR
 # environment
@@ -223,9 +227,9 @@ http_proxy = http://127.0.0.1:3128/
 # environment
 LANG = C
 # environment
-VSCODE_PID = 22322
+VSCODE_PID = 10066
 # variable set hash-table stats:
-# Load=107/1024=10%, Rehash=0, Collisions=12/132=9%
+# Load=108/1024=11%, Rehash=0, Collisions=13/133=10%
 
 # Pattern-specific Variable Values
 
@@ -233,9 +237,9 @@ VSCODE_PID = 22322
 
 # Directories
 
-# . (device 64769, inode 4201197): 36 files, no impossibilities.
+# . (device 64769, inode 4201197): 28 files, no impossibilities.
 
-# 36 files, no impossibilities in 1 directories.
+# 28 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -245,67 +249,65 @@ VSCODE_PID = 22322
 
 # Not a target:
 scanner.o:
-#  Implicit rule search has been done.
-#  Last modified 2021-11-09 21:14:17.391858547
-#  File has been updated.
-#  Successfully updated.
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+table.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 all: clox
 #  Command line target.
 #  Implicit rule search has been done.
 #  File does not exist.
-#  File has been updated.
-#  Successfully updated.
+#  File has not been updated.
 
 # Not a target:
 chunk.o:
-#  Implicit rule search has been done.
-#  Last modified 2021-11-09 21:14:17.315858549
-#  File has been updated.
-#  Successfully updated.
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 object.o:
-#  Implicit rule search has been done.
-#  Last modified 2021-11-09 21:14:17.367858548
-#  File has been updated.
-#  Successfully updated.
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2021-11-09 21:14:12.099858664
+#  Last modified 2022-02-26 13:12:48.973587265
 #  File has been updated.
+ 
 #  Successfully updated.
 
 # Not a target:
 debug.o:
- 
-#  Implicit rule search has been done.
-#  Last modified 2021-11-09 21:14:17.27585855
-#  File has been updated.
-#  Successfully updated.
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 value.o:
-#  Implicit rule search has been done.
-#  Last modified 2021-11-09 21:14:17.27585855
-#  File has been updated.
-#  Successfully updated.
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 linenoise.o:
-#  Implicit rule search has been done.
-#  Last modified 2021-11-09 21:14:17.519858544
-#  File has been updated.
-#  Successfully updated.
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 vm.o:
-#  Implicit rule search has been done.
-#  Last modified 2021-11-09 21:14:17.303858549
-#  File has been updated.
-#  Successfully updated.
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 default: clox
 #  Implicit rule search has not been done.
@@ -328,46 +330,42 @@ clean:
 # Not a target:
 clox.o:
 #  Implicit rule search has been done.
-#  Last modified 2021-11-09 21:14:17.311858549
-#  File has been updated.
-#  Successfully updated.
+#  File does not exist.
+#  File has not been updated.
 
-clox: clox.o compiler.o chunk.o debug.o memory.o value.o vm.o scanner.o object.o linenoise.o
+clox: clox.o table.o compiler.o chunk.o debug.o memory.o value.o vm.o scanner.o object.o linenoise.o
 #  Implicit rule search has not been done.
-#  Last modified 2021-11-09 21:14:17.603858542
-#  File has been updated.
-#  Successfully updated.
+#  Last modified 2022-02-26 10:05:46.859019589
+#  File has not been updated.
 #  recipe to execute (from 'Makefile', line 8):
-	$(CC) $(CFLAGS) -o clox clox.o compiler.o chunk.o debug.o memory.o value.o vm.o scanner.o object.o linenoise.o
+	$(CC) $(CFLAGS) -o clox clox.o table.o compiler.o chunk.o debug.o memory.o value.o vm.o scanner.o object.o linenoise.o
 
 # Not a target:
 memory.o:
-#  Implicit rule search has been done.
-#  Last modified 2021-11-09 21:14:17.303858549
-#  File has been updated.
-#  Successfully updated.
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # Not a target:
 compiler.o:
-#  Implicit rule search has been done.
-#  Last modified 2021-11-09 21:14:17.291858549
-#  File has been updated.
-#  Successfully updated.
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
 
 # files hash-table stats:
-# Load=17/1024=2%, Rehash=0, Collisions=2/41=5%
+# Load=18/1024=2%, Rehash=0, Collisions=2/43=5%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 43 / storage = 371 B / avg = 8 B
-# current buf: size = 8162 B / used = 371 B / count = 43 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 46 / storage = 395 B / avg = 8 B
+# current buf: size = 8162 B / used = 395 B / count = 46 / avg = 8 B
 
-# strcache performance: lookups = 65 / hit rate = 33%
+# strcache performance: lookups = 58 / hit rate = 20%
 # hash-table stats:
-# Load=43/8192=1%, Rehash=0, Collisions=6/65=9%
-# Finished Make data base on Tue Nov  9 21:14:31 2021
+# Load=46/8192=1%, Rehash=0, Collisions=5/58=9%
+# Finished Make data base on Sun Feb 27 10:06:12 2022
 
  
