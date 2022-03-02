@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <string.h>
+#include <stdio.h>
 
 #include "memory.h"
 #include "object.h"
@@ -141,9 +142,9 @@ void tableAddAll(Table *from, Table *to)
 ObjString *tableFindString(Table *table, const char *chars,
                            int length, uint32_t hash)
 {
-  if (table->count == 0)
+  if (table->count == 0){
     return NULL;
-
+  }
   uint32_t index = hash % table->capacity;
   for (;;)
   {
@@ -164,4 +165,23 @@ ObjString *tableFindString(Table *table, const char *chars,
 
     index = (index + 1) % table->capacity;
   }
+}
+
+void tablePrint(Table *table)
+{
+  printf("\nPrinting the table\n");
+  printf("Table count %d\n=================\n", table->count);
+  for (int i = 0; i < table->capacity ; ++i)
+  {
+    Entry *entry = &table->entries[i];
+    if (entry->key == NULL){
+      printf("(nil)");
+    }
+    else{
+      printf("%.*s=", entry->key->length, entry->key->chars);
+    }
+    printValue(entry->value);
+    printf("\n");
+  }
+  printf("-------------------------");
 }
