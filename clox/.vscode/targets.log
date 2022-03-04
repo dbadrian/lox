@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed Mar  2 20:52:17 2022
+# Make data base, printed on Fri Mar  4 15:52:36 2022
 
 # Variables
 
@@ -47,7 +47,6 @@ CDC_JOINED_ZONE = OU=DE,OU=Zones,OU=CLIENTCOMPUTERS,OU=Osd-clients,OU=Applicatio
 # environment
 ftp_proxy = http://127.0.0.1:3128/
 # environment
- 
 XDG_CONFIG_DIRS = /etc/xdg/xdg-xsession:/etc/xdg
 # makefile (from 'Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
@@ -68,7 +67,7 @@ DISPLAY = :0
 # environment
 DCONF_PROFILE = osd_proxy
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/10000730/vscode-ipc-cfa6d1cc-4dc2-4d9f-a774-303e68f7f103.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/10000730/vscode-ipc-290f2d05-336b-4aae-9ed4-1e6e8ced6d90.sock
 # environment
 VSCODE_CWD = /home/add2rng
 # environment
@@ -258,7 +257,7 @@ scanner.o:
 # Not a target:
 table.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-03-02 13:37:40.872731728
+#  Last modified 2022-03-02 21:31:41.814092781
 #  File has been updated.
 #  Successfully updated.
 
@@ -279,13 +278,14 @@ chunk.o:
 # Not a target:
 object.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-02-27 19:21:27.262019416
+#  Last modified 2022-03-02 21:31:41.854093404
 #  File has been updated.
 #  Successfully updated.
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2022-02-26 13:12:48.973587265
 #  File has been updated.
 #  Successfully updated.
@@ -293,7 +293,7 @@ Makefile:
 # Not a target:
 debug.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-02-27 19:21:27.022019403
+#  Last modified 2022-03-02 21:58:33.563181656
 #  File has been updated.
 #  Successfully updated.
 
@@ -314,7 +314,7 @@ linenoise.o:
 # Not a target:
 vm.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-02-27 19:34:22.478060817
+#  Last modified 2022-03-02 21:58:33.631182715
 #  File has been updated.
 #  Successfully updated.
 
@@ -331,7 +331,6 @@ default: clox
 
 clean:
 #  Implicit rule search has not been done.
- 
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 13):
@@ -346,7 +345,7 @@ clox.o:
 
 clox: clox.o table.o compiler.o chunk.o debug.o memory.o value.o vm.o scanner.o object.o linenoise.o
 #  Implicit rule search has not been done.
-#  Last modified 2022-03-02 13:45:34.228100091
+#  Last modified 2022-03-02 21:58:33.703183835
 #  File has been updated.
 #  Successfully updated.
 #  recipe to execute (from 'Makefile', line 8):
@@ -362,7 +361,7 @@ memory.o:
 # Not a target:
 compiler.o:
 #  Implicit rule search has been done.
-#  Last modified 2022-02-27 19:21:26.946019399
+#  Last modified 2022-03-02 21:58:33.527181095
 #  File has been updated.
 #  Successfully updated.
 
@@ -380,6 +379,6 @@ compiler.o:
 # strcache performance: lookups = 69 / hit rate = 33%
 # hash-table stats:
 # Load=46/8192=1%, Rehash=0, Collisions=6/69=9%
-# Finished Make data base on Wed Mar  2 20:52:17 2022
+# Finished Make data base on Fri Mar  4 15:52:36 2022
 
  

@@ -63,8 +63,6 @@ ObjString *copyString(const char *chars, int length)
     if (interned != NULL)
         return interned;
 
-    printf("ALLLOCATING NEWEW STRIGN");
-
     char *heapChars = ALLOCATE(char, length + 1);
     memcpy(heapChars, chars, length);
     heapChars[length] = '\0';

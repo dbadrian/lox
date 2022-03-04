@@ -1,9 +1,3 @@
-asd 
-dasdasd
-asd 
-asdas
-dasd +As das asd= 
-dasd +As das asd= (@
 4+2
 (4+2)*3
 (4+2)*-3
@@ -98,3 +92,9 @@ var breakfast = "beignets";
 var beverage = "cafe au lait";
 breakfast = "beignets with " + beverage;
 print breakfast;
+{ var a = "Asdsa"; }
+{{ var a = "Asdsa"; }}
+{var a = "asd"; { var a = "Asdsa"; }}
+{var a = "asd"; print a; { var a = "Asdsa"; }}
+{var a = "asd"; print a + "a----sds"; { var a = "Asdsa"; }}
+{var a = "asd"; print a + "a----sds"; { var a = a; print a; }}
