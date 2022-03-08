@@ -1,8 +1,3 @@
-4+2
-(4+2)*3
-(4+2)*-3
-(-1 + 2) * 3 - -4
-4+2
 sadas
 a
 3333
@@ -98,3 +93,8 @@ print breakfast;
 {var a = "asd"; print a; { var a = "Asdsa"; }}
 {var a = "asd"; print a + "a----sds"; { var a = "Asdsa"; }}
 {var a = "asd"; print a + "a----sds"; { var a = a; print a; }}
+var a = True;
+var a = true;
+if(a) print "works";
+var a = false;
+if(a) print "works";
